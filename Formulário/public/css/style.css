@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+input::placeholder{
+    font-style: italic;
+    opacity: 1;
+}
+
+h1{
+    text-align: center;
+}
+
+body{
+    background: linear-gradient(135deg, #124e4b, #000000);
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+    gap: 60px;
+}
+
+input[type ="date"]{
+    color: rgba(0, 0, 0, 0.596);
+    font-style: italic;
+}
+
+select{
+    color: rgba(0, 0, 0, 0.596);
+    font-style: italic;
+}
+
+.sexo{
+    border: 2px solid black;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10%;
+    
+}
+
+.sexo label{
+    color: rgba(0, 0, 0, 0.596);
+    font-style: italic;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+.sexo input{
+    align-items: center;
+    justify-content: center; 
+}
+
+h1{
+    color: black;
+    margin-bottom: 25px;
+    font-size: 40px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+form{
+    background-color: white;
+    width: 450px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+label{
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+input,
+select{
+    padding: 12px;
+    border: 2px solid #111010;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+input[type="radio"]{
+    margin-right: 5px;
+    accent-color:#124e4b;    
+}
+
+button{
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg,  #124e4b, #000000);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    transform: scale(1.03);
+    background: linear-gradient(135deg,  #000000, #124e4b);
+}
+
+h2{
+    margin-top: 30px;
+    color: rgb(17, 17, 17);
+    font-size: 30px;
+}
+
+p{
+    background-color: rgba(255,255,255,0.9);
+    width: 450px;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    color: #333;
+    font-weight: 500;
+}
+
+.resut{
+    border:2px solid white;
+    border-radius: 15px;
+    padding: 10px 10px;
+    gap: 20px;
+    background-color: white;
+}
+
+.resut p{
+    margin-bottom: 10px;
+    border:2px solid #111010;
+}
+
+.resut h1{
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    letter-spacing: 2px;
+}
