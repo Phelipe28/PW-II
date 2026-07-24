@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Triângulos</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Digite os lados do triângulo</h1>
+    <div class="div1">
+        <form class="Form_div" action="/calcular" method="POST">
+            <h3>Lados Triângulos</h3>
+            <input type="number" name="ladoA" placeholder="Lado A" required>
+            <input type="number" name="ladoB" placeholder="Lado B" required>
+            <input type="number" name="ladoC" placeholder="Lado C" required>
+            <button type="submit">Calcular</button>
+        </form>
+
+        <div class="div2">
+            <% if (mensagem) { %>
+                <h2>
+                    <%= mensagem %>
+                </h2>
+                <div class="triangulo-img <%= mostraImagem %>"></div>
+                <% } %>
+        </div>
+    </div>
+</body>
+
+</html>
