@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fila </title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <section class="section1">
+        <div>
+            <h2>Proximo</h2>
+            <p>
+                <%= chamando %>
+            </p>
+        </div>
+
+        <div>
+            <h3>Fila Atual</h3>
+            <p>
+                <%= filaAtual %>
+            </p>
+        </div>
+        <p></p>
+    </section>
+
+    <section class="section2">
+        <form action="/gerarSenha" method="POST">
+            <button type="submit"> Nova senha </button>
+        </form>
+
+        <form action="/proximo" method="POST">
+            <button type="submit"> Chamar senha </button>
+        </form>
+    </section>
+</body>
+
+</html>
